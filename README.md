@@ -10,7 +10,7 @@ Follow @developedbytri on Instagram for more coding tips, tutorials, and behind-
 
 ## Authors
 
-- [@developedbytri](https://www.github.com/triartainyoman)
+- [@developedbytri](https://www.instagram.com/developedbytri)
 
 ## Tech Stack
 
