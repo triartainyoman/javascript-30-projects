@@ -10,16 +10,18 @@
   <body>
     <div class="container">
       <h1>Text Case Converter</h1>
-      <textarea
-        name="text"
-        id="text"
-        placeholder="Enter your text here"
-      ></textarea>
+      <textarea id="input" placeholder="Enter your text here"></textarea>
       <div class="btn-group">
-        <button class="btn-case" id="lowerCase">lower case</button>
-        <button class="btn-case" id="upperCase">UPPER CASE</button>
-        <button class="btn-case" id="capitalizeCase">Capitalize Case</button>
-        <button class="btn-copy" id="capitalizeCase">
+        <button class="btn-case" onclick="convertToLowerCase()">
+          lower case
+        </button>
+        <button class="btn-case" onclick="convertToUpperCase()">
+          UPPER CASE
+        </button>
+        <button class="btn-case" onclick="convertToCapitalizeCase()">
+          Capitalize Case
+        </button>
+        <button class="btn-copy" onclick="copyResults()">
           <img src="img/icon-copy.svg" alt="Copy Results Icon" /> Copy Results
         </button>
       </div>
