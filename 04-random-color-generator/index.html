@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Random Color Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Color Generator</h1>
+      <input
+        type="text"
+        name="colorCode"
+        id="colorCode"
+        value="#8CFFBA"
+        disabled
+      />
+      <div class="btn-group">
+        <button class="btn-generate" onclick="handleGenerate()">
+          Generate
+        </button>
+        <button class="btn-copy" onclick="handleCopy()">
+          <img src="img/icon-copy.svg" alt="Copy Results Icon" /> Copy
+        </button>
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

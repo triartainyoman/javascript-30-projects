@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #8cffba;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#colorCode {
+  width: 358px;
+  font-size: 24px;
+  font-weight: medium;
+  text-align: center;
+  padding: 21px 123px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: #272441;
+  background-color: #ffffff;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn-generate {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #f48b4a;
+  margin-right: 35px;
+}
+
+.btn-generate:hover {
+  background-color: #f4a777;
+}
+
+.btn-copy {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #272441;
+}
+
+.btn-copy:hover {
+  background-color: #443f6f;
+}
+
+.btn-copy img {
+  fill: #ffffff;
+  margin-right: 10px;
+}
