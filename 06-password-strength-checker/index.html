@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Password Strength Checker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="password-container">
+        <label for="password">Password</label>
+        <div class="password-input">
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+          <i id="toggle-password" class="fas fa-eye"></i>
+        </div>
+      </div>
+      <div class="status-container">
+        <div class="status">
+          <img
+            src="/img/icon_circle.svg"
+            id="eight-character"
+            alt="Eight characters"
+          />
+          <p id="eight-character-text">At least 8 characters</p>
+        </div>
+        <div class="status">
+          <img src="/img/icon_circle.svg" id="lowercase" alt="Lowercase" />
+          <p id="lowercase-text">At least one lowercase character</p>
+        </div>
+        <div class="status">
+          <img src="/img/icon_circle.svg" id="uppercase" alt="uppercase" />
+          <p id="uppercase-text">At least one uppercase character</p>
+        </div>
+        <div class="status">
+          <img src="/img/icon_circle.svg" id="one-number" alt="one-number" />
+          <p id="one-number-text">At least one number</p>
+        </div>
+        <div class="status">
+          <img
+            src="/img/icon_circle.svg"
+            id="special-character"
+            alt="special-character"
+          />
+          <p id="special-character-text">At least one special character</p>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
