@@ -11,14 +11,27 @@
       <div class="card">
         <h1>Password Generator</h1>
         <div class="result">
-          <input type="text" name="password" id="password" />
-          <img src="img/icon_copy.svg" id="copy-password" alt="Copy Icon" />
+          <input type="text" name="result-password" id="result-password" />
+          <img
+            src="img/icon_copy.svg"
+            class="copy-password"
+            onclick="handleCopy()"
+            alt="Copy Icon"
+          />
         </div>
-        <div class="password-length">
+        <div class="password">
           <p>Enter Password Length:</p>
-          <input type="number" name="length" id="password-length" />
+          <input
+            type="number"
+            name="length"
+            id="password-length"
+            placeholder="0"
+            min="1"
+          />
         </div>
-        <button class="btn-generate">Generate Password</button>
+        <button class="btn-generate" onclick="generatePassword()">
+          Generate Password
+        </button>
       </div>
     </div>
     <script src="js/script.js"></script>

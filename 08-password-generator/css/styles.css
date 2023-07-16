@@ -56,7 +56,7 @@
   outline: none;
 }
 
-#copy-password {
+.copy-password {
   position: absolute;
   top: 50%;
   right: 20px;
@@ -64,7 +64,7 @@
   cursor: pointer;
 }
 
-.password-length {
+.password {
   width: 350px;
   display: flex;
   flex-direction: row;
@@ -73,11 +73,11 @@
   margin-bottom: 35px;
 }
 
-.password-length p {
+.password p {
   color: #f5f5fa;
 }
 
-.password-length input {
+.password input {
   width: 52px;
   height: 30px;
   text-align: center;
@@ -86,7 +86,7 @@
   border-radius: 3px;
 }
 
-.password-length input:focus {
+.password input:focus {
   outline: none;
 }
 
