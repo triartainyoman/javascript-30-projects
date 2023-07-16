@@ -13,7 +13,7 @@ const generatePassword = () => {
 };
 
 const handleCopy = () => {
-  let copyText = document.getElementById("result-password");
+  const copyText = document.getElementById("result-password");
 
   copyText.select();
   copyText.setSelectionRange(0, 99999);
