@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  background-image: url("../img/background.svg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(53, 78, 128, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(53, 78, 128, 0.25);
+  border-radius: 10px;
+}
+
+.card h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #f5f5fa;
+  margin-bottom: 25px;
+}
+
+.result {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.result input {
+  width: 350px;
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #f5f5fa;
+  background-color: #272b34;
+  border: none;
+  border-radius: 6px;
+}
+
+.result input:focus {
+  outline: none;
+}
+
+#copy-password {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password-length {
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.password-length p {
+  color: #f5f5fa;
+}
+
+.password-length input {
+  width: 52px;
+  height: 30px;
+  text-align: center;
+  background-color: #f5f5fa;
+  border: none;
+  border-radius: 3px;
+}
+
+.password-length input:focus {
+  outline: none;
+}
+
+.btn-generate {
+  cursor: pointer;
+  padding: 14px 106px;
+  border: none;
+  border-radius: 6px;
+  color: #f5f5fa;
+  background-color: #f48b4a;
+}
+
+.btn-generate:hover {
+  background-color: #ca865b;
+}
