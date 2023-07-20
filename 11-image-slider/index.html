@@ -5,20 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- External CSS -->
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Image Carousel</title>
+    <title>Image Slider</title>
   </head>
   <body>
     <div class="container">
-      <div class="carousel-wrapper">
-        <button id="">
+      <div class="slider-wrapper">
+        <button onclick="slidePrev()">
           <img src="./img/icon-left.svg" alt="Previous Image" />
         </button>
-        <img
-          src="./img/image-1.png"
-          id="carousel-image"
-          alt="Carousel Images"
-        />
-        <button id="">
+        <img src="./img/image-1.png" id="slider-image" alt="slider Images" />
+        <button onclick="slideNext()">
           <img src="./img/icon-right.svg" alt="Next Image" />
         </button>
       </div>
