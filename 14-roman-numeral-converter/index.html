@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Roman Numeral Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Roman Numeral Converter</h1>
+
+        <div class="input-wrapper">
+          <label for="inputNumber">Enter a number (1-4999): </label>
+          <input
+            type="number"
+            name="inputNumber"
+            id="inputNumber"
+            min="1"
+            max="4999"
+          />
+          <button onclick="convertToRoman()">Calculate</button>
+        </div>
+
+        <div id="result"></div>
+        <div id="error"></div>
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
