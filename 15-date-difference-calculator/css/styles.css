@@ -18,7 +18,7 @@
 
 .card {
   width: 540px;
-  height: auto;
+  height: 454px;
   padding: 55px;
   background-color: #1c1c1c;
   border-radius: 15px;
@@ -66,6 +66,7 @@
 }
 
 .card button {
+  cursor: pointer;
   width: 100%;
   font-size: 16px;
   font-weight: 500;
@@ -75,6 +76,10 @@
   border-radius: 6px;
   padding: 14px 106px;
   margin-bottom: 35px;
+}
+
+.card button:hover {
+  background-color: #025cb0;
 }
 
 #result {
