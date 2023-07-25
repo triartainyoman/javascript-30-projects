@@ -13,4 +13,74 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #116a7b;
+}
+
+.card {
+  width: 540px;
+  height: auto;
+  padding: 55px;
+  background-color: #1c1c1c;
+  border-radius: 15px;
+}
+
+.card h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #f5f5fa;
+  text-align: center;
+}
+
+.date-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.date label {
+  font-weight: 500;
+  color: #949494;
+}
+
+.date input {
+  width: 184px;
+  padding: 14px 20px;
+  color: #f5f5fa;
+  background-color: #282828;
+  border: none;
+  border-radius: 6px;
+}
+
+.date input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(65%) sepia(5%) saturate(1011%) hue-rotate(202deg)
+    brightness(98%) contrast(84%);
+  cursor: pointer;
+}
+
+.card button {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f5f5fa;
+  background-color: #0381fa;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 106px;
+  margin-bottom: 35px;
+}
+
+#result {
+  padding: 30px 20px;
+  text-align: center;
+  color: #f5f5fa;
+  background-color: #282828;
+  border-radius: 6px;
 }

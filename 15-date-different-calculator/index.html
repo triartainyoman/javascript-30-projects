@@ -5,10 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- External CSS -->
     <link rel="stylesheet" href="css/styles.css" />
-    <title>JavaScript Projects</title>
+    <title>Date Difference Calculator</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="container">
+      <div class="card">
+        <h1>Date Difference Calculator</h1>
+        <div class="date-wrapper">
+          <div class="date">
+            <label for="date-start">Start Date</label>
+            <input type="date" name="date-start" id="date-start" />
+          </div>
+          <div class="date">
+            <label for="date-end">End Date</label>
+            <input type="date" name="date-end" id="date-end" />
+          </div>
+        </div>
+        <button>Calculate</button>
+        <div id="result">Please select a valid date!</div>
+      </div>
+    </div>
     <!-- JavaScript -->
     <script src="js/script.js"></script>
   </body>
