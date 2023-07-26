@@ -7,10 +7,44 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #44a1a0 50%, #78cdd7 50%);
+}
+
 .container {
-  min-height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fcfcfc;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.card {
+  width: 700px;
+  height: 250px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.card div {
+  display: none;
+  width: 50%;
+  text-align: center;
+}
+
+.card div h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #eb5e28;
+}
+
+.card div h1 span {
+  color: #000000;
 }
