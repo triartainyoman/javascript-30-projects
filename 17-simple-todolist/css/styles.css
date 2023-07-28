@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: #1f3f65;
+  --secondary: #e4d4f2;
+  --accent: #c9ede4;
+  --dark: #333333;
+  --white: #f5f5fa;
+  --radius__lg: 8px;
+  --radius__md: 6px;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+}
+
+.card {
+  width: 660px;
+  padding: 50px;
+  background-color: var(--white);
+  border-radius: var(--radius__lg);
+}
+
+.card h1 {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.input-wrapper input {
+  width: 430px;
+  padding: 15px 20px;
+  font-size: 18px;
+  color: var(--dark);
+  background-color: var(--accent);
+  border: none;
+  border-radius: var(--radius__md);
+}
+
+.input-wrapper button {
+  cursor: pointer;
+  padding: 15px 34px;
+  font-size: 18px;
+  color: var(--white);
+  background-color: var(--primary);
+  border: none;
+  border-radius: var(--radius__md);
+}
+
+.input-wrapper button:hover {
+  opacity: 0.9;
+}
+
+.todo {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary);
+  border-radius: var(--radius__md);
+}
+
+.todo button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.todo:not(:last-child) {
+  margin-bottom: 15px;
+}
