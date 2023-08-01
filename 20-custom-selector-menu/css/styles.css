@@ -29,6 +29,7 @@
   align-items: center;
   width: 320px;
   padding: 14px 20px;
+  color: var(--black);
   background-color: var(--white);
   border-radius: 6px;
   cursor: pointer;
@@ -58,6 +59,7 @@
   list-style: none;
   display: flex;
   padding: 10px 6px;
+  color: var(--black);
   transition: padding 0.2s linear;
 }
 
