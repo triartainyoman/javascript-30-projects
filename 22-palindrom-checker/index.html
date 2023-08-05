@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- External CSS -->
     <link rel="stylesheet" href="css/styles.css" />
-    <title>JavaScript Projects</title>
+    <title>Palindrom Checker</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="container">
+      <div class="card">
+        <h1>Palindrom Checker</h1>
+        <div class="input-wrapper">
+          <input
+            type="text"
+            id="input"
+            placeholder="Enter a word here..."
+            autocomplete="off"
+          />
+          <button onclick="checkPalindrom()">Check</button>
+        </div>
+        <div class="result hide" id="result"></div>
+      </div>
+    </div>
     <!-- JavaScript -->
     <script src="js/script.js"></script>
   </body>
