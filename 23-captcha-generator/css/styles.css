@@ -87,7 +87,6 @@
 
 .alert {
   display: none;
-  margin: 15px 0;
 }
 
 .alert.danger {
