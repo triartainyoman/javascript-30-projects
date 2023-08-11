@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: #334469;
+  --dark: #333333;
+  --gray: #bdebe0;
+  --white: #f5f5fa;
+  --danger: #c94c68;
+  --success: #95e06c;
+  --rounded-md: 6px;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/background.svg") no-repeat center;
+}
+
+.card {
+  width: 466px;
+  padding: 50px;
+  background-color: var(--white);
+  border-radius: var(--rounded-md);
+}
+
+.card h1 {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--dark);
+  margin-bottom: 30px;
+}
+
+.captcha-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.captcha-wrapper input {
+  width: 100%;
+  font-size: 26px;
+  letter-spacing: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--rounded-md);
+  background-color: var(--gray);
+}
+
+.captcha-wrapper button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: var(--primary);
+  border-radius: var(--rounded-md);
+}
+
+.captcha-wrapper button:hover {
+  opacity: 0.9;
+}
+
+.input {
+  width: 100%;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border: 1px solid var(--gray);
+  border-radius: var(--rounded-md);
+  background-color: var(--white);
+}
+
+.alert {
+  display: none;
+  margin: 15px 0;
+}
+
+.alert.danger {
+  color: var(--danger);
+}
+
+.alert.success {
+  color: var(--success);
+}
+
+.btn-submit {
+  cursor: pointer;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  border-radius: var(--rounded-md);
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.btn-submit:hover {
+  opacity: 0.9;
+}

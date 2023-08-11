@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Captcha Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Captcha Generator</h1>
+        <div class="captcha-wrapper">
+          <input type="text" id="captcha" value="4H3ae5" disabled />
+          <button>
+            <img src="./img/icon-generate.svg" alt="icon-generate" />
+          </button>
+        </div>
+        <input
+          type="text"
+          class="input"
+          id="input"
+          placeholder="Enter captcha"
+        />
+        <p class="alert">Entered captcha is not correct</p>
+        <button class="btn-submit">Submit Captcha</button>
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
