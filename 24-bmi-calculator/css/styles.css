@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --white: #f5f5fa;
+  --black: #333333;
+  --primary: #a8a196;
+  --gray: #c9ede4;
+  --rounded: 6px;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/background.svg") no-repeat center;
+}
+
+.bmi-wrapper {
+  width: 466px;
+  padding: 50px;
+  background-color: var(--white);
+  border-radius: var(--rounded);
+}
+
+.bmi-wrapper > h1 {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 15px;
+}
+
+.input-wrapper > label {
+  font-size: 16px;
+  color: var(--black);
+  margin-bottom: 5px;
+}
+
+.input-wrapper > input {
+  font-size: 20px;
+  padding: 15px 20px;
+  background-color: var(--gray);
+  border: none;
+  border-radius: var(--rounded);
+}
+
+.btn-calculate {
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px 0;
+  margin-top: 15px;
+  color: var(--white);
+  background-color: var(--primary);
+  border: none;
+  border-radius: var(--rounded);
+}
+
+.btn-calculate:hover {
+  opacity: 0.9;
+}
+
+.result {
+  visibility: hidden;
+  scale: 0;
+  width: 466px;
+  height: 466px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: var(--rounded);
+}
+
+.result > h5 {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 30px;
+}
+
+.result > h1 {
+  font-size: 46px;
+  color: var(--primary);
+}
+
+.result > p {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.result > button {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border: none;
+  border-radius: var(--rounded);
+  color: var(--white);
+  background-color: var(--primary);
+}
