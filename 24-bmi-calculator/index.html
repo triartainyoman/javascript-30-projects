@@ -22,13 +22,17 @@
           <input type="number" min="1" id="weight" />
         </div>
 
-        <button class="btn-calculate">Calculate</button>
+        <span id="error">Please enter valid values!</span>
+
+        <button class="btn-calculate" onclick="calculateBMI()">
+          Calculate
+        </button>
       </div>
       <div class="result">
         <h5>BMI Result</h5>
-        <h1>6.8</h1>
-        <p>Normal</p>
-        <button class="btn-back">Back</button>
+        <h1 id="result-number"></h1>
+        <p id="result-category"></p>
+        <button class="btn-back" onclick="hideResult()">Back</button>
       </div>
     </div>
     <!-- JavaScript -->
