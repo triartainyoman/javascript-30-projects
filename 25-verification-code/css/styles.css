@@ -7,10 +7,118 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --primary: #85e8d8;
+  --secondary: #eeeaea;
+  --black: #333333;
+  --white: #ffffff;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--primary);
+}
+
+.card {
+  width: 466px;
+  height: 410px;
+  background-color: var(--white);
+  position: relative;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card-illustration {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  z-index: 1;
+  top: -160px;
+  justify-content: center;
+}
+
+.card-content {
+  position: absolute;
+  z-index: 2;
+  padding: 80px 65px 65px 65px;
+  text-align: center;
+}
+
+.input-title h1 {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.input-title p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.input-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.input {
+  width: 60px;
+  height: 65px;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 5px;
+}
+
+.input:focus {
+  outline-color: var(--primary);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.input-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.resend {
+  text-align: start;
+}
+
+.resend a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.resend a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--primary);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
 }

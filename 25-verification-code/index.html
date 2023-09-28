@@ -19,17 +19,54 @@
             <p>Check your email for verification code</p>
           </div>
           <div class="input-body">
-            <input type="text" name="input-1" id="input-1" />
-            <input type="text" name="input-2" id="input-2" />
-            <input type="text" name="input-3" id="input-3" />
-            <input type="text" name="input-4" id="input-4" />
+            <input
+              type="number"
+              maxlength="1"
+              min="0"
+              max="9"
+              class="input"
+              name="input-1"
+              id="input-1"
+              oninput="moveToNext(this, 'input1')"
+            />
+            <input
+              type="number"
+              maxlength="1"
+              min="0"
+              max="9"
+              class="input"
+              name="input-2"
+              id="input-2"
+              oninput="moveToNext(this, 'input2')"
+            />
+            <input
+              type="number"
+              maxlength="1"
+              min="0"
+              max="9"
+              class="input"
+              name="input-3"
+              id="input-3"
+              oninput="moveToNext(this, 'input3')"
+            />
+            <input
+              type="number"
+              maxlength="1"
+              min="0"
+              max="9"
+              class="input"
+              name="input-4"
+              id="input-4"
+            />
           </div>
           <div class="input-footer">
             <div class="resend">
               <p>Didn't get a code?</p>
               <a href="#">Click to resend</a>
             </div>
-            <button>Continue</button>
+            <div>
+              <button class="btn">Continue</button>
+            </div>
           </div>
         </div>
       </div>
